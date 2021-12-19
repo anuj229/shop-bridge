@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shop-bridge/static/css/main.d88d27fc.css",
+    "main.js": "/shop-bridge/static/js/main.21739ef8.js",
+    "static/js/787.1fdafbc7.chunk.js": "/shop-bridge/static/js/787.1fdafbc7.chunk.js",
+    "index.html": "/shop-bridge/index.html",
+    "main.d88d27fc.css.map": "/shop-bridge/static/css/main.d88d27fc.css.map",
+    "main.21739ef8.js.map": "/shop-bridge/static/js/main.21739ef8.js.map",
+    "787.1fdafbc7.chunk.js.map": "/shop-bridge/static/js/787.1fdafbc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d88d27fc.css",
+    "static/js/main.21739ef8.js"
+  ]
+}
