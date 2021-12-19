@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import Home from "./components/Home"
+import Create from "./components/Create"
+import Delete from "./components/Delete"
+import Update from "./components/Update";
+import Read from "./components/Read";
+import { HashRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import {AppProvider} from "./Context"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <HashRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/create/" element={<Create />} />
+          <Route path="/delete/:id" element={<Delete />} />
+          <Route path="/update/:id" element={<Update />} />
+          <Route path="/view/:id" element={<Read />} />
+        </Routes>
+      </HashRouter>
+    </AppProvider>
   );
 }
 
